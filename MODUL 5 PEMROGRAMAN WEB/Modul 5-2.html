@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Modul 5-2 Kalkulator Sederhana</title>
+<script type="text/javascript">
+alert("Selamat Datang Di kalculator Sederhana Javascript. Developper : husnarizka@gmail.com")
+</script>
+<script type="text/javascript">
+    function tambah()
+    {
+    var a,b,c;
+    a=document.forms[0].a.value;
+    b=document.forms[0].b.value;
+    c=parseInt(a)+parseInt(b);
+    document.forms[0].c.value=c;
+    }
+    function kurang()
+    {
+    var a,b,c;
+    a=document.forms[0].a.value;
+    b=document.forms[0].b.value;
+    c=parseInt(a)-parseInt(b);
+    document.forms[0].c.value=c;
+    }
+    function kali()
+    {
+    var a,b,c;
+    a=document.forms[0].a.value;
+    b=document.forms[0].b.value;
+    c=parseInt(a)*parseInt(b);
+    document.forms[0].c.value=c;
+    }
+    function bagi()
+    {
+    var a,b,c;
+    a=document.forms[0].a.value;
+    b=document.forms[0].b.value;
+    c=parseInt(a)/parseInt(b);
+    document.forms[0].c.value=c;
+    }
+</script>
+</head>
+<body>
+<form>
+    <body><div align="center">
+    <h2>KALKULATOR SEDERHANA</h2>
+    Bil 1 <input type="text" name=a /><br />
+    Bil 2 <input type="text" name=b /><br />
+    Hasil <input type="text" name=c /><br />
+    <input type="button" value="+" onclick="tambah()" />
+    <input type="button" value="-" onclick="kurang()" />
+    <input type="button" value="*" onclick="kali()" />
+    <input type="button" value="/" onclick="bagi()" /> <br />
+    <input type="reset" value="Reset" />
+</div>
+</form>
+</body>
+</html>
